@@ -7,7 +7,9 @@ public class Main {
 		System.out.println("gan");
 		System.out.println("marder");
 		System.out.print("cow");
-		System.out.print("新生盃冠軍！！");
+		System.out.print("���������");
+		System.out.println("wtf");
+		System.out.println("wtf");
 	}
 
 }
