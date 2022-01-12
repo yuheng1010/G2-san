@@ -247,7 +247,14 @@ style='position:absolute;width:130px;height:130px;left:12%;top:75%;margin-top:-4
 margin-left:368px'/>
 <h3 style="position:absolute;left:64%;top:130%;margin-top:-265px;margin-left:-175px;
 font-size:100%;font-family:'Georgia';color:#2D2926;">Loading...</h3>
-
+<%/**if(keyword!=""){
+	<div>
+	<h5 style='position:absolute;width:205px;height:135px;left:12%;top:75%;margin-top:-47px;margin-left:368px;
+	color:#F1F2E4;background-color:#F1F2E4;'>厚到底想怎樣</h5></div>
+	}else{
+	<div style="display:none">
+	<h5 style='position:absolute;width:205px;height:135px;left:12%;top:75%;margin-top:-47px;margin-left:368px;
+	color:#F1F2E4;background-color:#F1F2E4;'>脖子好痠</h5></div>**/%>
 </form>
 </body>
 </html>

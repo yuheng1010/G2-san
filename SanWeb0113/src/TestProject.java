@@ -43,6 +43,7 @@ public class TestProject extends HttpServlet {
 	 }
   
 	 GoogleQuery google = new GoogleQuery(request.getParameter("keyword"));
+	 request.setAttribute("keyword", request.getParameter("keyword"));
 	 //request.getRequestDispatcher("Rotate.jsp").forward(request, response);
 	 HashMap<String, String> query = google.query();
 	 WebPage rootPage = new WebPage(google.url, "page");  
