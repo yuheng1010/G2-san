@@ -42,13 +42,13 @@ public class TestProject extends HttpServlet {
 		 return;
 	 }
   
-	 GoogleQuery google = new GoogleQuery(request.getParameter("keyword"));;
+	 GoogleQuery google = new GoogleQuery(request.getParameter("keyword"));
+	 request.setAttribute("keyword", request.getParameter("keyword"));
+	 //request.getRequestDispatcher("Rotate.jsp").forward(request, response);
 	 HashMap<String, String> query = google.query();
-  
 	 WebPage rootPage = new WebPage(google.url, "page");  
 	 WebTree tree = new WebTree(rootPage);
 	 KeywordList keywords = new KeywordList();
-  
   
 	 for(Entry<String, String> entry : query.entrySet()) {
 		 tree.root.addChild(new WebNode(new WebPage(entry.getValue(),entry.getKey())));
@@ -60,14 +60,6 @@ public class TestProject extends HttpServlet {
 	 String[][] s = new String[query.size()][2];
 	 request.setAttribute("query", s);
 	 int num = 0;
-	 /**for(Entry<String, String> entry : query.entrySet()) {  
-      	String key = entry.getKey();
-      	String value = entry.getValue();
-      	s[num][0] = key;
-        s[num][1] = value;
-      	num++; 
-	  }
-  	 System.out.println("888888888" + query+"888888888");**/
 	 for(int i=0;i<tree.root.children.size();i++) {
 		 String key=tree.root.children.get(i).webPage.name;
 		 String value=tree.root.children.get(i).webPage.url;

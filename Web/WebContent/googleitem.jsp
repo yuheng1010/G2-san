@@ -47,8 +47,7 @@ text-decoration:underline;
 		<input type='text' class="border-style" id="padding" name='keyword'
 			style='font-size: 120%; position: absolute; left: 50%; top: 50%; margin-top: -250px; margin-left: -400px; width: 800px; height: 25px'
 			placeholder = '搜尋Hi!kingoogle或輸入關鍵字' value='<%=request.getParameter("keyword")%>'/>
-	</div>
-
+			</div>
 </form>
 </body>
 </html>

@@ -31,7 +31,6 @@
 	animation-iteration-count:infinite;
 	
 }
-
 @keyframes note{
 	0%{
 		
@@ -218,24 +217,6 @@
   }
 }
 </style>
-<script type="text/javascript">
-function click10() {
-	document.getElementsByName("searchNum")[0].value = 10;
-	document.getElementsByName("searchNum")[0].style.color = '#0489B1';
-}
-function click20() {
-	document.getElementsByName("searchNum")[0].value = 20;
-	document.getElementsByName("searchNum")[0].style.color = '#0489B1';
-}
-function click40() {
-	document.getElementsByName("searchNum")[0].value = 40;
-	document.getElementsByName("searchNum")[0].style.color = '#0489B1';
-}
-function click80() {
-	document.getElementsByName("searchNum")[0].value = 80;
-	document.getElementsByName("searchNum")[0].style.color = '#0489B1';
-}
-</script>
 </head>
 <img src="images/bg.png" style='position:fixed;width:1300px;left:0%;top:0%;margin-top:0px;margin-left:0px '>
 
@@ -261,6 +242,19 @@ margin-top:-47px;margin-left:-400px;width:800px;height:45px' name='keyword' plac
 style='position:absolute;width:27px;height:27px;left:50%;top:64%;margin-top:-47px;
 margin-left:368px '/>
 </div>
+<img src="images/skateboardnbg.gif" 
+style='position:absolute;width:130px;height:130px;left:12%;top:75%;margin-top:-47px;
+margin-left:368px'/>
+<h3 style="position:absolute;left:64%;top:130%;margin-top:-265px;margin-left:-175px;
+font-size:100%;font-family:'Georgia';color:#2D2926;">Loading...</h3>
+<%/**if(keyword!=""){
+	<div>
+	<h5 style='position:absolute;width:205px;height:135px;left:12%;top:75%;margin-top:-47px;margin-left:368px;
+	color:#F1F2E4;background-color:#F1F2E4;'>厚到底想怎樣</h5></div>
+	}else{
+	<div style="display:none">
+	<h5 style='position:absolute;width:205px;height:135px;left:12%;top:75%;margin-top:-47px;margin-left:368px;
+	color:#F1F2E4;background-color:#F1F2E4;'>脖子好痠</h5></div>**/%>
 </form>
 </body>
 </html>
